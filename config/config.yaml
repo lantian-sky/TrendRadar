@@ -115,9 +115,9 @@ rss:
   # - 正整数：覆盖全局设置，只推送此天数内的文章
   # - 0：禁用此频道的新鲜度过滤，推送所有文章
   feeds:
-    - id: "hacker-news"
-      name: "Hacker News"
-      url: "https://hnrss.org/frontpage"
+    - id: "huxiu"
+      name: "虎嗅"
+      url: "https://rss.huxiu.com/"
 
     - id: "ruanyifeng"
       name: "阮一峰的网络日志"
@@ -125,9 +125,13 @@ rss:
       enabled: false                  # 禁用
       # max_age_days: 3               # 示例：推送 3 天内的文章（更新较慢的博客）
      
-    - id: "yahoo-finance"
-      name: "雅虎财经"
-      url: "https://finance.yahoo.com/news/rssindex"
+    - id: "geekpark"
+      name: "极客公园"
+      url: "https://mainssl.geekpark.net/rss.rss"
+
+    - id: "ifanr"
+      name: "爱范儿"
+      url: "https://www.ifanr.com/feed" 
 
     # 自定义源示例
     # - id: "custom-feed"
@@ -266,7 +270,7 @@ display:
     new_items: false                   # 新增热点区域（含热榜新增 + RSS 新增）
                                       # 注：热点词汇统计中的新增标记🆕不受此配置影响
 
-    rss: false                         # RSS 订阅区域
+    rss: true                         # RSS 订阅区域
                                       # 开启后将对 RSS 进行关键词分析并在通知中展示
                                       # 关闭后跳过分析，但独立展示区不受影响
 
